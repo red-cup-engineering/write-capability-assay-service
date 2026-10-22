@@ -29,5 +29,9 @@
     "@red-cup-engineering/relation-model-notation-typing": "workspace:*",
     "@red-cup-engineering/semantic-content-identify-service": "workspace:*"
   },
-  "license": "UNLICENSED"
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
 }
