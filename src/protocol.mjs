@@ -1,5 +1,5 @@
 import { EMPTY_WITNESS_ROOT, admitNormalizedSemanticContent, identifyNormalizedSemanticContent } from "@red-cup-engineering/semantic-content-identify-service";
-import { jsonToTerm, termToJson } from "@red-cup-engineering/computer-code-engine/sen/json";
+import { jsonToTerm, termToJson } from "@red-cup-engineering/typed-computer-code-engine/sen/json";
 import { inferTy } from "@red-cup-engineering/relation-model-notation-typing";
 function identify(value, objectKind) { const term = jsonToTerm(value), semanticType = inferTy([], term); if (semanticType === null) throw new TypeError(`${objectKind} did not derive an RMN type`); return identifyNormalizedSemanticContent({ objectKind, semanticType, term, witnessRoot: EMPTY_WITNESS_ROOT }); }
 function decode(bytes, kind, objectKind) {
